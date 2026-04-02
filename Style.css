@@ -1,0 +1,124 @@
+<header>
+    <nav>
+        <h2>Winnet Mbishi</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+body{
+font-family: Arial;
+margin:0;
+padding:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+background:rgb(10, 134, 66);
+color:white;
+padding:10px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:50px;
+}
+
+.btn{
+background:rgb(114, 187, 126);
+color:white;
+padding:10px 20px;
+text-decoration:none;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:20px;
+}
+
+.card{
+border:1px solid grey;
+padding:20px;
+}
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background-color:#e8f5e9;
+}
+
+/* Header */
+header{
+background-color:#2e7d32;
+padding:20px;
+color:white;
+}
+
+nav h2{
+margin:0;
+}
+
+/* Contact section */
+section{
+padding:40px;
+}
+
+/* Form */
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+max-width:500px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+/* Inputs */
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #a5d6a7;
+border-radius:5px;
+}
+
+/* Button */
+button{
+margin-top:15px;
+padding:10px;
+background-color:#43a047;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Button hover */
+button:hover{
+background-color:#1b5e20;
+}

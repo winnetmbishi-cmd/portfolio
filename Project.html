@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0fff1; /* Very light green */
+            color: #1e8a3e; /* Deep green text */
+        }
+
+        h1.page-title {
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #1dd829;
+            border-bottom: 2px solid #32eb25;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 40px;
+            left: 50%; /* Center the centered h1 */
+            transform: translateX(-50%); /* Center the centered h1 */
+            position: relative;
+        }
+
+        /* Container that mimics your notebook sketch */
+        .projects-grid {
+            display: grid;
+            /* Creates a 2x2 grid */
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; /* Space between cards */
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #63fa60; /* Blue border like your pen drawing */
+            padding: 30px;
+            border-radius: 8px;
+            background-color: white;
+            position: relative; /* For absolutely positioned button text */
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            border: 2px solid #c0febf;
+            border-radius: 10px;
+            overflow: hidden; /* Clips image to card corners */
+            background: white;
+            transition: border-color 0.2s;
+            display: flex;
+            flex-direction: column; /* Stack image, text, and button vertically */
+            position: relative;
+            padding-bottom: 50px; /* Space for the bottom link */
+        }
+
+        .project-card:hover {
+            border-color: #25eb32; /* Darker green border on hover */
+        }
+
+        /* 1. Image Container (The 'Picture' box in your sketch) */
+        .project-image-wrapper {
+            width: 100%;
+            height: 180px; /* Fixed height for consistent cards */
+            background-color: #dbfeeb; /* Green placeholder color */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #bffecc;
+        }
+
+        /* The actual image tag styling */
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image covers area without stretching */
+        }
+
+        /* Placeholder text if image doesn't load */
+        .project-image-wrapper:empty::before {
+            content: 'Picture Placeholder';
+            color: #60fa60;
+            font-size: 0.9rem;
+        }
+
+        .project-details {
+            padding: 15px;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1dd868;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .project-description {
+            font-size: 0.9rem;
+            color: #47694a;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Button style for GitHub/Live Demo */
+        .project-link {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #2eb843;
+            font-size: 0.9rem;
+            border-top: 1px solid #bffed6;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            color: #25eb60;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="page-title">MyProjects</h1>
+
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="pic1.jpeg" alt="screenshot for network tool"
+                class="project-image">
+                </div>
+            <div class="project-details">
+                <h3 class="project-title">Hacking</h3>
+                <p class="project-description">Intentionally probing systems, networks and apllications for vulnerabilities to improve security.</p>
+            </div>
+            <a href="https://github.com/winnetmbishi-cmd/lab-prac1-MBISHI.git">Github</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="pic2.jpeg" alt="screenshot for customers Premises Equipment"
+                class="project-image" >
+                </div>
+            <div class="project-details">
+                <h3 class="project-title">Networking</h3>
+                <p class="project-description">Connecting computing devices like computers, servers, and routers using wired or wirwless technologies to share data and resources.</p>
+            </div>
+            <a href="https://github.com/winnetmbishi-cmd/lab-prac1-MBISHI.git">Github</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="pic3.jpeg" alt="screenshot for sales Forecasting"
+                class="project-image">
+                </div>
+            <div class="project-details">
+                <h3 class="project-title">Technical Diagrams of the STLC</h3>
+                <p class="project-description">Visual flowcharts detailing the 7 phases of STLC.</p>
+            </div>
+            <a href="https://winnetmbishi-cmd.github.io/lab-prac1-MBISHI/Winnet's%20Portifolio/Home.html
+">Live demo</a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="pic4.jpeg" alt="screenshot for Book Management in a library">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">Cybersecurity Analyst</h3>
+                <p class="project-description">Analyzing the security environment of a company's computer network and identifying potential vulnerabilies.</p>
+            </div>
+            <a href="https://winnetmbishi-cmd.github.io/lab-prac1-MBISHI/Winnet's%20Portifolio/Home.html
+">Live demo</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

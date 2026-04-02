@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Winnet's Portfolio</title>
+    <style>
+        /* my base styles with different shades of blue */
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-color: #f0f8ff; /* Lightest shade for page background */
+            color: #14582f;          /* Deep Green for main text */
+            display: flex;/*centers the cube */
+            justify-content: center;/*lowers cube to tthe center*/
+            align-items: center;/*shortens the centerd cube*/
+            min-height: 100vh;       /* Centers the content on the screen from the upper mid*/
+        }
+
+        .hero-container {
+            background-color: #ffffff; /* White card inside light blue page */
+            width: 100%;
+            max-width: 600px;         /* Limits width on large screens */
+            padding: 40px;
+            text-align: center;       /* Centers all elements inside the card */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.1); /* Subtle shadow */
+            border: 2px solid #60fa65; /* Blue border like your pen drawing */
+        }
+
+        /* 1. Name and Tagline */
+        h1.name {
+            font-size: 2.5rem;
+            color: #0c591c;          /* Medium-dark Green */
+           
+        }
+        /* 2. Professional photo or avatar container */
+        .photo-frame {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #95dba0; /* Green frame */
+            border-radius: 50%;       /* Makes the frame round */
+            overflow: hidden;         /* Clips the image to the round frame */
+            margin: 0 auto 25px auto; /* Centers and adds spacing below */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #a5eeab; /* Very light green placeholder */
+        }
+
+        /* The actual photo inside the frame */
+        .profile-photo {
+            width: 50%;
+            height: 50%;
+            object-fit: cover; /* Ensures the photo is resized well, not stretched */
+        }
+
+        /* If no image is found, show this simple avatar placeholder text */
+        .photo-frame:empty::before {
+            content: '(Photo Placeholder)';
+            color: #93fdb3;
+            font-size: 0.8rem;
+        }
+
+        /* for the introduction */
+        .introduction {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: black;          /* Slate/grey-blue for easier reading */
+        }
+
+        /* for the  Call-to-action button */
+        .cta-button {
+            display: inline-block;
+            background-color: #25eb4d; /* Strong Blue for the button */
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.2s; /* Smooth color change on hover */
+        }
+
+        /* Hover effect for interactivity */
+        .cta-button:hover {
+            background-color: #1dd823; /* Darkens on hover */
+        }
+        .bottom-nav {
+    display: flex;
+    justify-content: space-around; /* Distributes links evenly */
+    background-color: #f8f9fa;
+    border-top: 2px solid #2ecc71; /* Matches your green border */
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px; /* Rounds the bottom corners */
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.bottom-nav a:hover {
+    color: #2ecc71;
+    background-color: #e8f8f0;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <h1 class="name">Winnet R Mbishi</h1>
+
+        <div class="photo-frame">
+            <img src="C:\Users\Winnet\Desktop\Winnet's Portifolio\pic1.jpeg"
+            alt="Winnet's Mbishi Picture">
+            </div>
+
+        <div class="introduction">
+           <strong> Hello, I'm Winnet Mbishi.</strong><br>
+            - I am a web technologies student interested in wed development and Cybersecurity.
+            -I am good in Hacking.
+        </div>
+<nav class="bottom-nav">
+    <a href="Project.html">Projects</a>
+    <a href="Contact.html">Contacts</a>
+    <a href="About.html">About</a>
+</nav>
+       
+    </div>
+
+</body>
+</html>
